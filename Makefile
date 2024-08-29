@@ -10,30 +10,28 @@
 #                                                                              #
 # **************************************************************************** #
 
+NAME = ft_printf
+
 SRC = ft_gest_ft.c ft_gest_ft2.c ft_gest_ft3.c ft_lettura.c ft_printf.c \
-      	ft_ricercha_arg.c ft_p.c
+   	ft_ricercha_arg.c ft_p.c
 OBJ = $(SRC:.c=.o)
 
 CC = gcc
 
 CC_FLAGS = -Wall -Wextra -Werror
 
-NAME = libftprintf.a
-
 all: ${NAME}
 
-${NAME}:
-	${CC} ${CC_FLAG} -c ${SRC}
-	ar -rsv libftprintf.a ${OBJ}
+${NAME}: ${OBJ}
+	${CC} ${CC_FLAGS} ${OBJ} -o ft_printf
 
 clean:
-	/bin/rm -f *.o
+	rm -f *.o
 
 fclean: clean
-	/bin/rm -f ${NAME}
+	rm -f ${NAME}
 
 re: fclean all
 
-rebonus: fclean
+.PHONY: all clean fclean re
 
-.PHONY:	all clean fclean re

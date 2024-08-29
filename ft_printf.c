@@ -37,3 +37,12 @@ int	ft_printf(const char *format, ...)
 	va_end(list);
 	return (c);
 }
+
+
+int main(void){
+	int i = 27;
+	char *c = "Rotkiv97";
+
+	ft_printf("\033[33m%s \033[0mha \033[31m%d \033[0manni\n", c, i);
+	return 0;
+}
