@@ -24,4 +24,10 @@ This is a feature of the C language that allows you to define functions that can
 # Test project
 ## Enter the folder where the Makefile is and open the terminal :
 
+```bash
+make
+./ft_printf
+```
+
+
 ![images](./Docks/img/output.png)
