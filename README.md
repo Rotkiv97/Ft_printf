@@ -13,7 +13,7 @@ This is a feature of the C language that allows you to define functions that can
 
 ![images](./Docks/img/ft_printf.png)
 
-## Create a main under the ft_printf function in the ft_printf.c file.
+## Create a main under the ft_printf function in the [ft_printf.c](ft_printf.c) file.
 
 ## EXAMPLE :
 
